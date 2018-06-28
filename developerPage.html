@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <title>System Acounting of Knowledge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="assets/developer.js"></script>
+    <link href="assets/styles.css" rel="stylesheet">
+    <link href="developer.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="developer page">
+        <h2>Choose your level in followed technologies</h2>
+        <form class="technology" type="post" id="technologies-form">
+            <script id="technologies-template" type="x-handlebars-template">​
+                {{#each this}}
+                  <div class="tech">
+                    <label for="{{tech}}"> {{tech}} :</label>
+                    <select name={{tech}}>
+                    <option value=""></option>     
+                    <option value="beginner">beginner</option>
+                    <option value="intermediate">intermediate</option>
+                    <option value="advanced">advanced</option>
+                    </select><br>
+                  </div>
+                {{/each}} 
+            </script>
+        </form>
+        <button type="submit" id="submitDeveloperKnow">Submit</button>
+    </div>
+    
+</body>
+
+</html>

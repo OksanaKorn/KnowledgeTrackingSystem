@@ -1,0 +1,307 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "registrationInfo": {
+        "name": "Jack",
+        "lastName": "White",
+        "email": "jackjack@gmail.com",
+        "password": "123456",
+        "role": "developer"
+      },
+      "knowelageInfo": {
+        "javascript": "advanced",
+        "css": "advanced",
+        "html": "advanced",
+        "angular": "intermediate",
+        "sql": "beginner",
+        "csharp": "",
+        "java": "",
+        "python": "",
+        "mongodb": "beginner",
+        "english": "advanced"
+      }
+    },
+    {
+      "id": 2,
+      "registrationInfo": {
+        "name": "Bob",
+        "lastName": "Dilan",
+        "email": "bobbob@gmail.com",
+        "password": "123456",
+        "role": "developer"
+      },
+      "knowelageInfo": {
+        "javascript": "beginner",
+        "css": "beginner",
+        "html": "beginner",
+        "angular": "",
+        "sql": "beginner",
+        "csharp": "advanced",
+        "java": "",
+        "python": "",
+        "mongodb": "beginner",
+        "english": "advanced"
+      }
+    },
+    {
+      "knowelageInfo[JavaScript]": "advanced",
+      "knowelageInfo[CSS]": "beginner",
+      "knowelageInfo[HTML]": "intermediate",
+      "knowelageInfo[Angular]": "",
+      "knowelageInfo[React]": "intermediate",
+      "knowelageInfo[SQL]": "advanced",
+      "knowelageInfo[C#]": "",
+      "knowelageInfo[Java]": "",
+      "knowelageInfo[Python]": "",
+      "knowelageInfo[MongoDB]": "",
+      "knowelageInfo[English]": "beginner",
+      "id": 3
+    },
+    {
+      "knowelageInfo[JavaScript]": "advanced",
+      "knowelageInfo[CSS]": "beginner",
+      "knowelageInfo[HTML]": "intermediate",
+      "knowelageInfo[Angular]": "",
+      "knowelageInfo[React]": "intermediate",
+      "knowelageInfo[SQL]": "advanced",
+      "knowelageInfo[C#]": "",
+      "knowelageInfo[Java]": "",
+      "knowelageInfo[Python]": "",
+      "knowelageInfo[MongoDB]": "",
+      "knowelageInfo[English]": "beginner",
+      "id": 4
+    },
+    {
+      "knowelageInfo[JavaScript]": "advanced",
+      "knowelageInfo[CSS]": "beginner",
+      "knowelageInfo[HTML]": "intermediate",
+      "knowelageInfo[Angular]": "",
+      "knowelageInfo[React]": "intermediate",
+      "knowelageInfo[SQL]": "advanced",
+      "knowelageInfo[C#]": "",
+      "knowelageInfo[Java]": "",
+      "knowelageInfo[Python]": "",
+      "knowelageInfo[MongoDB]": "",
+      "knowelageInfo[English]": "beginner",
+      "id": 5
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "klm",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 6
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 7
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 8
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 9
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 10
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 11
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 12
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "km",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 13
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "klm",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 14
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "klm",
+      "registrationInfo[email]": "",
+      "registrationInfo[password]": "",
+      "id": 15
+    },
+    {
+      "registrationInfo[name]": "",
+      "registrationInfo[lastName]": "klm",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "",
+      "id": 16
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "Korniienko",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "6666666",
+      "registrationInfo[role]": "developer",
+      "id": 17
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "Kornienko",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "777777777",
+      "registrationInfo[role]": "developer",
+      "id": 18
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 19
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 20
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 21
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 22
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 23
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 24
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 25
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 26
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 27
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "kkk",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "lllllllll",
+      "registrationInfo[role]": "developer",
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "registrationInfo[name]": "ok",
+      "registrationInfo[lastName]": "k",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "kkkkkkk",
+      "registrationInfo[role]": "developer",
+      "id": 33
+    },
+    {
+      "registrationInfo[name]": "ok",
+      "registrationInfo[lastName]": "k",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "kkkkkkk",
+      "registrationInfo[role]": "developer",
+      "id": 34
+    },
+    {
+      "registrationInfo[name]": "ok",
+      "registrationInfo[lastName]": "k",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "kkkkkkk",
+      "registrationInfo[role]": "developer",
+      "id": 35
+    },
+    {
+      "registrationInfo[name]": "Oksana",
+      "registrationInfo[lastName]": "k",
+      "registrationInfo[email]": "kskorni21@gmail.com",
+      "registrationInfo[password]": "kkkkkkk",
+      "registrationInfo[role]": "developer",
+      "id": 36
+    }
+  ]
+}

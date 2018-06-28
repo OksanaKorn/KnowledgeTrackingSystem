@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <title>System Acounting of Knowledge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="assets/manager.js"></script>
+    <link href="manager.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="manager page">
+        
+
+        <div class="developers-list">
+            <script id="developers-template" type="x-handlebars-template">​
+                {{#each this}}
+                <ul class="developer">
+                    <li data-index="{{id}}" class="developer">
+                    <li><span>Name: </span>{{registrationInfo.name}}</li>
+                    <li><span>JavaScript: </span>{{knowelageInfo.javascript}}</li>
+                    <li><span>CSS: </span>{{knowelageInfo.css}}</li>
+                    <li><span>HTML: </span>{{knowelageInfo.html}}</li>
+                    <li><span>Angular: </span>{{knowelageInfo.angular}}</li>
+                    <li><span>SQL: </span>{{knowelageInfo.sql}}</li>
+                    <li><span>MongoDB: </span>{{knowelageInfo.mongodb}}</li>
+                    <li><span>C#: </span>{{knowelageInfo.csharp}}</li>
+                    <li><span>Java: </span>{{knowelageInfo.java}}</li>
+                    <li><span>Python: </span>{{knowelageInfo.python}}</li>
+                    <li><span>English: </span>{{knowelageInfo.english}}</li>
+                    </li></ul>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+    
+</body>
+

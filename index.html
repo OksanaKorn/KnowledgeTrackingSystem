@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <title>System Acounting of Knowledge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="assets/main.js"></script>
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet"> -->
+    <link href="assets/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="login page">
+
+        </div>
+
+        <div class="registration page">
+            
+        </div>
+
+        <div class="manager page">
+            <ul class="filter">
+                <button class="test">test</button>
+                <div class='test2'></div>
+                <script id="filters-template" type="x-handlebars-template">​
+                    {{#each this}}
+                    <li>
+                      <ul><li>{{tech}}
+                        <select>
+                            <option value=""></option>
+                            <option value="beginner">beginner</option>
+                            <option value="intermediate">intermediate</option>
+                            <option value="advanced">advanced</option>
+                        </select></li></ul>
+                    {{/each}}
+                    </li>
+                </script>
+            </ul>
+<!-- 
+
+            <div class="filters">
+                <input type="checkbox" name="" id="javascript">
+                <input type="checkbox" name="" id="css">
+                <input type="checkbox" name="" id="html">
+                <input type="checkbox" name="" checked id="angular">
+                <input type="checkbox" name="" id="angular">
+                <input type="checkbox" name="" id="sql">
+                <input type="checkbox" name="" id="mongodb">
+                <input type="checkbox" name="" id="csharp">
+                <input type="checkbox" name="" id="java">
+                <input type="checkbox" name="" id="python">
+                <input type="checkbox" name="" id="english">
+            </div> -->
+            <button type="submit">Filter</button>
+
+
+            <ul class="developers-list">
+                <script id="developers-template" type="x-handlebars-template">​
+                    {{#each this}}
+                        <li data-index="{{id}}">
+                            <ul class="developer-information">
+                                <li><span>Name: </span>{{registrationInfo.name}}</li>
+                                <li><span>JavaScript: </span>{{knowelageInfo.javascript}}</li>
+                                <li><span>CSS: </span>{{knowelageInfo.css}}</li>
+                                <li><span>HTML: </span>{{knowelageInfo.html}}</li>
+                                <li><span>Angular: </span>{{knowelageInfo.angular}}</li>
+                                <li><span>SQL: </span>{{knowelageInfo.sql}}</li>
+                                <li><span>MongoDB: </span>{{knowelageInfo.mongodb}}</li>
+                                <li><span>C#: </span>{{knowelageInfo.csharp}}</li>
+                                <li><span>Java: </span>{{knowelageInfo.java}}</li>
+                                <li><span>Python: </span>{{knowelageInfo.python}}</li>
+                                <li><span>English: </span>{{knowelageInfo.english}}</li>
+                            </ul>
+                        </li>
+                    {{/each}}
+                </script>
+            </ul>
+        </div>
+    
+        <div class="developer page">
+
+        </div>
+    
+        <div class="error page">
+            <h3>Sorry, something went wrong :(</h3>
+        </div>
+    
+    </div>
+</body>
+
+</html>

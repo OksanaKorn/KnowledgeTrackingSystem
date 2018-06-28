@@ -1,0 +1,19 @@
+/* .developer {
+    margin: 20px 20px;
+    border: 2px solid #FEF5E7;
+    list-style: none;
+    display: inline-block;
+} */
+
+
+.developers-list{
+    display: flex;	
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;	
+}
+.developer {
+    width: 30%;
+    margin: 0 1%;
+    list-style: none;
+}
