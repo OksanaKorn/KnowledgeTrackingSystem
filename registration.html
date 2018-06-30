@@ -11,7 +11,7 @@
         <form action="#" name="registration" id="registration">
         
             <label for="name">First Name</label>
-            <input type="text" name="name" id="firstname" placeholder="Name"/>
+            <input type="text" name="name" id="name" placeholder="Name"/>
         
             <label for="lastName">Last Name</label>
             <input type="text" name="lastName" id="lastName" placeholder="Last Name"/>
@@ -23,10 +23,10 @@
             <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/>
 
             <label for="role">Role</label>
-            <select name="role">
+            <select name="role" id="role">
                 <option value="" selected disabled hidden>Choose a Role</option>
-                <option value="developer">developer</option>
-                <option value="manager">manager</option>
+                <option value="developer" class="role">developer</option>
+                <option value="manager" class="role">manager</option>
             </select>
         
             <button type="submit" id="submitRegistration">Register</button>

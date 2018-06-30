@@ -33,71 +33,52 @@ $(function() {
   });
 
 
-//   $(document).ready(function(){
-//     $("#submitLogin").click(function(){
-//         if($("#login").valid()) {
-//             var email = $('#email').val();
-//             var password = $('#password').val();
-//             var flag = false;
-//             $.get("http://localhost:3000/users", function(data, status){
-//                 for (var i = 0; i < data.length; i++) {
-//                     var user = data[i];
-//                     var reg = user.registrationInfo;
-//                     if (email == reg.email && password == reg.password) {
-//                     alert("you logged as " + reg.name + reg.lastName);
-//                     flag = true;
-//                     break;
-//                     }
-//                 }
-//                 if (!flag) alert("wrong email or password");
-//             })
-//         };
-//     });
-// });
-
-
-
 
 
   $(document).ready(function() {
     $("#submitRegistration").click(function(e){
       if($("#registration").valid()) {
-        // (!$.get("http://localhost:3000/users", function(data, status){
-        //   var email = $('#email').val();
-        //         for (var i = 0; i < data.length; i++) {
-        //             var user = data[i];
-        //             var reg = user.registrationInfo;
-        //             if (email == reg.email) {
-        //             alert("user with this email already exists");
-        //             return true;
-        //             break;
-        //             }
-        //         }
-        //     }))
+        e.preventDefault(); 
+        var flag = false;
+        $.get("http://localhost:3000/users", function(data, status){
+          var email = $('#email').val();
+                for (var i = 0; i < data.length; i++) {
+                    var user = data[i];
+                    if (email == user.email) {
+                      flag = true;
+                      break;
+                    }
+                }
+            })
 
-
-
-       var registrationInfo = {};
-       var formData = $("#registration").serializeArray();
-       e.preventDefault(); 
+            if (!flag) {
+            
+      //  var formData = $("#registration").serializeArray();
+       
     
-     $.each(formData, function() {
-          if (registrationInfo[this.name]) {
-             if (!registrationInfo[this.name].push) {
-                registrationInfo[this.name] = [registrationInfo[this.name]];
-             }
-             registrationInfo[this.name].push(this.value || "");
-         } else {
-            registrationInfo[this.name] = this.value || "";
-         }
+    //  $.each(formData, function() {
+    //       if (registrationInfo[this.name]) {
+    //          if (!registrationInfo[this.name].push) {
+    //             registrationInfo[this.name] = [registrationInfo[this.name]];
+    //          }
+    //          registrationInfo[this.name].push(this.value || "");
+    //      } else {
+    //         registrationInfo[this.name] = this.value || "";
+    //      }
     
-        });
+    //     });
 
         $.post("http://localhost:3000/users",
         {
-          registrationInfo
+          id: "",
+          name: $('#name').val(),
+          lastName: $('#lastName').val(),
+          email: $('#email').val(),
+          password: $('#password').val(),
+          role: $('#role').val()
         });
-        console.log(registrationInfo);
+        // console.log(registrationInfo);
 
-     }});
+      } else alert("user with this email already exists");
+    }});
      });

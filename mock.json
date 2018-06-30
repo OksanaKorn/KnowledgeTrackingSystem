@@ -2,26 +2,51 @@
   "users": [
     {
       "id": 1,
-      "registrationInfo": {
-        "name": "Jack",
-        "lastName": "White",
-        "email": "jackjack@gmail.com",
-        "password": "123456",
-        "role": "developer"
-      }
+      "name": "Jack",
+      "lastName": "White",
+      "email": "jackjack@gmail.com",
+      "password": "123456",
+      "role": "developer"
     },
     {
       "id": 2,
-      "registrationInfo": {
-        "name": "Bob",
-        "lastName": "Dilan",
-        "email": "bobbob@gmail.com",
-        "password": "123456",
-        "role": "developer"
-      }
+      "name": "Bob",
+      "lastName": "Dilan",
+      "email": "bobbob@gmail.com",
+      "password": "123456",
+      "role": "developer"
+    },
+    {
+      "id": 3,
+      "name": "Oksana",
+      "lastName": "kl",
+      "email": "kskorni21@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": 4,
+      "name": "Oksana",
+      "lastName": "kl",
+      "email": "kskorni21@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": 5,
+      "name": "Oksana",
+      "lastName": "km",
+      "email": "kskorni21@gmail.com",
+      "password": "333333333",
+      "role": "developer"
+    },
+    {
+      "id": 6,
+      "name": "Oksana",
+      "lastName": "km",
+      "email": "kskorni21@gmail.com",
+      "password": "333333333",
+      "role": "developer"
     }
   ],
-
   "techologies": [
     {
       "id": 1,
