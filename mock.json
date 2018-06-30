@@ -45,38 +45,66 @@
       "email": "kskorni21@gmail.com",
       "password": "333333333",
       "role": "developer"
+    },
+    {
+      "id": 7,
+      "name": "Oksana",
+      "lastName": "Korn",
+      "email": "kskorni21@gmail.com",
+      "password": "12345",
+      "role": "developer"
+    },
+    {
+      "id": 8,
+      "name": "Oksa",
+      "lastName": "mjlk",
+      "email": "kskorni21@gmail.com",
+      "password": "7777777777",
+      "role": "developer"
+    },
+    {
+      "id": 9,
+      "name": "klmkn",
+      "lastName": "m",
+      "email": "kskorni21@gmail.com",
+      "password": "555555555",
+      "role": "developer"
+    },
+    {
+      "id": 10,
+      "name": "kkkll",
+      "lastName": "llll",
+      "email": "kskorni21@gmail.com",
+      "password": "33333333",
+      "role": "developer"
     }
   ],
-  "techologies": [
+  "technologies": [
     {
       "id": 1,
-      "knowelageInfo": {
-        "javascript": "advanced",
-        "css": "advanced",
-        "html": "advanced",
-        "angular": "intermediate",
-        "sql": "beginner",
-        "csharp": "",
-        "java": "",
-        "python": "",
-        "mongodb": "beginner",
-        "english": "advanced"
-      }
+      "javascript": "advanced",
+      "css": "advanced",
+      "html": "advanced",
+      "angular": "intermediate",
+      "sql": "beginner",
+      "csharp": "",
+      "java": "",
+      "python": "",
+      "mongodb": "beginner",
+      "english": "advanced"
     },
     {
       "id": 2,
-      "knowelageInfo": {
-        "javascript": "beginner",
-        "css": "beginner",
-        "html": "beginner",
-        "angular": "",
-        "sql": "beginner",
-        "csharp": "advanced",
-        "java": "",
-        "python": "",
-        "mongodb": "beginner",
-        "english": "advanced"
-      }
+      "javascript": "beginner",
+      "css": "beginner",
+      "html": "beginner",
+      "angular": "",
+      "sql": "beginner",
+      "csharp": "advanced",
+      "java": "",
+      "python": "",
+      "mongodb": "beginner",
+      "english": "advanced"
     }
   ]
 }

@@ -1,9 +1,9 @@
-$.getJSON( "http://localhost:3000/users", function( data ) {
+$.getJSON( "http://localhost:3000/technologies", function( data ) {
 
     // Write the data into our global variable.
     developers = data;
     for (developer in developers) {
-        for (tech in developer.knowelageInfo) {
+        for (tech in developer) {
             if(tech[tech] == "") {
                 tech = undefined;
             }

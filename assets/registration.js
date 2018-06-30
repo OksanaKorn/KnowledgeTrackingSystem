@@ -39,8 +39,8 @@ $(function() {
     $("#submitRegistration").click(function(e){
       if($("#registration").valid()) {
         e.preventDefault(); 
-        var flag = false;
         $.get("http://localhost:3000/users", function(data, status){
+          var flag = false;
           var email = $('#email').val();
                 for (var i = 0; i < data.length; i++) {
                     var user = data[i];
@@ -49,9 +49,10 @@ $(function() {
                       break;
                     }
                 }
-            })
+                if (!flag) {
+            
 
-            if (!flag) {
+            
             
       //  var formData = $("#registration").serializeArray();
        
@@ -79,6 +80,6 @@ $(function() {
         });
         // console.log(registrationInfo);
 
-      } else alert("user with this email already exists");
+      } else alert("user with this email already exists");})
     }});
      });
