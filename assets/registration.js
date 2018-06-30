@@ -32,9 +32,51 @@ $(function() {
     });
   });
 
+
+//   $(document).ready(function(){
+//     $("#submitLogin").click(function(){
+//         if($("#login").valid()) {
+//             var email = $('#email').val();
+//             var password = $('#password').val();
+//             var flag = false;
+//             $.get("http://localhost:3000/users", function(data, status){
+//                 for (var i = 0; i < data.length; i++) {
+//                     var user = data[i];
+//                     var reg = user.registrationInfo;
+//                     if (email == reg.email && password == reg.password) {
+//                     alert("you logged as " + reg.name + reg.lastName);
+//                     flag = true;
+//                     break;
+//                     }
+//                 }
+//                 if (!flag) alert("wrong email or password");
+//             })
+//         };
+//     });
+// });
+
+
+
+
+
   $(document).ready(function() {
     $("#submitRegistration").click(function(e){
       if($("#registration").valid()) {
+        // (!$.get("http://localhost:3000/users", function(data, status){
+        //   var email = $('#email').val();
+        //         for (var i = 0; i < data.length; i++) {
+        //             var user = data[i];
+        //             var reg = user.registrationInfo;
+        //             if (email == reg.email) {
+        //             alert("user with this email already exists");
+        //             return true;
+        //             break;
+        //             }
+        //         }
+        //     }))
+
+
+
        var registrationInfo = {};
        var formData = $("#registration").serializeArray();
        e.preventDefault(); 
