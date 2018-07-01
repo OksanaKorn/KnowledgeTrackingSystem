@@ -32,8 +32,14 @@ $(function() {
     });
   });
 
-
-
+  
+  function selectView(role) {
+    if (role == "developer") {
+      window.location.href = "developerPage.html";
+    } else if (role == "manager") {
+      window.location.href = "manager.html";
+    }
+  }
 
   $(document).ready(function() {
     $("#submitRegistration").click(function(e){
@@ -50,25 +56,6 @@ $(function() {
                     }
                 }
                 if (!flag) {
-            
-
-            
-            
-      //  var formData = $("#registration").serializeArray();
-       
-    
-    //  $.each(formData, function() {
-    //       if (registrationInfo[this.name]) {
-    //          if (!registrationInfo[this.name].push) {
-    //             registrationInfo[this.name] = [registrationInfo[this.name]];
-    //          }
-    //          registrationInfo[this.name].push(this.value || "");
-    //      } else {
-    //         registrationInfo[this.name] = this.value || "";
-    //      }
-    
-    //     });
-
         $.post("http://localhost:3000/users",
         {
           id: "",
@@ -77,9 +64,12 @@ $(function() {
           email: $('#email').val(),
           password: $('#password').val(),
           role: $('#role').val()
-        });
+        }
+      );
+      var role = $('#role').val();
+      sentName();
+      selectView(role);
         // console.log(registrationInfo);
-
       } else alert("user with this email already exists");})
     }});
      });

@@ -7,14 +7,19 @@
     <title>System Acounting of Knowledge</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="assets/manager.js"></script>
     <link href="manager.css" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img src="assets/logo.jpg">
+        <div class="statusBar">
+            <span class="userName" id="userName"></span><br>
+            <a href="login.html">Log out</a>
+        </div>
+    </header>
     <div class="manager page">
-        
 
         <div class="developers-list">
             <script id="developers-template" type="x-handlebars-template">​
@@ -37,6 +42,7 @@
             </script>
         </div>
     </div>
-    
+    <script src="assets/manager.js"></script>
 </body>
+</html>
 

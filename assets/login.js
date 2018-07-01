@@ -26,8 +26,15 @@ $(function() {
     });
   });
 
-// var email = "jackjack@gmail.com";
-// var password = 123456;
+var role;
+var userName;
+function selectView(role) {
+    if (role == "developer") {
+        window.location.href = "developerPage.html";
+    } else if (role == "manager") {
+        window.location.href = "manager.html";
+    }
+}
 
 $(document).ready(function(){
     $("#submitLogin").click(function(){
@@ -40,7 +47,14 @@ $(document).ready(function(){
                 for (var i = 0; i < data.length; i++) {
                     var user = data[i];
                     if (email == user.email && password == user.password) {
-                    alert("you logged as " + user.name + " " + user.lastName);
+                    role = user.role;
+                    userName = user.name + " " + user.lastName;
+                    if (typeof(Storage) !== "undefined") {
+                        localStorage.setItem("userName", userName);
+                    } else {
+                        console.log("Sorry, your browser does not support Web Storage...");
+                    }
+                    selectView(role);
                     flag = true;
                     break;
                     }
@@ -48,7 +62,7 @@ $(document).ready(function(){
                 if (!flag) alert("wrong email or password");
             })
         };
-    });
+    })
 });
 
 //   function login(event) {

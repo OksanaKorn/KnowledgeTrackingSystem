@@ -7,14 +7,20 @@
     <title>System Acounting of Knowledge</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="assets/developer.js"></script>
     <link href="assets/styles.css" rel="stylesheet">
     <link href="developer.css" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img src="assets/logo.jpg">
+        <div class="statusBar">
+            <span class="userName" id="userName"></span>
+            <a href="login.html">Log out</a>
+        </div>
+    </header>
     <div class="developer page">
-        <h2>Choose your level in followed technologies</h2>
+        <!-- <h2>Choose your level in followed technologies</h2>
         <form class="technology" type="post" id="technologies-form">
             <script id="technologies-template" type="x-handlebars-template">​
                 {{#each this}}
@@ -30,9 +36,106 @@
                 {{/each}} 
             </script>
         </form>
+        <button type="submit" id="submitDeveloperKnow">Submit</button> -->
+
+        <h2>Choose your level in followed technologies</h2>
+        <form class="technology" type="post" id="technologies-form">
+            <div class="tech">
+                <label for="javascript">JavaScript:</label>
+                <select name="javascript" id="javascript">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="css">CSS:</label>
+                <select name="css" id="css">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="html">HTML:</label>
+                <select name="html" id="html">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="sql">SQL:</label>
+                <select name="sql" id="sql">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="csharp">C#:</label>
+                <select name="csharp" id="csharp">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="java">Java:</label>
+                <select name="java" id="java">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="python">Python:</label>
+                <select name="python" id="python">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="mongodb">MongoDB:</label>
+                <select name="mongodb" id="mongodb">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="cplus">C++:</label>
+                <select name="cplus" id="cplus">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+            <div class="tech">
+                <label for="english">English:</label>
+                <select name="english" id="english">
+                <option value=""></option>     
+                <option value="beginner">beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advanced">advanced</option>
+                </select><br>
+            </div>
+        </form>
         <button type="submit" id="submitDeveloperKnow">Submit</button>
     </div>
-    
+    </div>
+    <script src="assets/developer.js"></script>
+    <!-- <script src="assets/login.js"></script> -->
 </body>
 
 </html>

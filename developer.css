@@ -9,7 +9,7 @@
     margin: 25px auto;
   }
   
-  form {
+  .developer form {
     padding: 20px;
     background: #95A5A6;
     color: #fff;
@@ -55,4 +55,9 @@
   }
   form .error {
     color: #ff0000;
+  }
+
+  .userName {
+    color: black;
+    display: block;
   }

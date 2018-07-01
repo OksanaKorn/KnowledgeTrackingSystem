@@ -1,21 +1,20 @@
 $.getJSON( "http://localhost:3000/technologies", function( data ) {
 
-    // Write the data into our global variable.
-    developers = data;
-    for (developer in developers) {
-        for (tech in developer) {
-            if(tech[tech] == "") {
-                tech = undefined;
-            }
-        }
-    }
+    var developers = data;
 
-    // Call a function to create HTML for all the products.
+    // for (var developer in developers) {
+    //     for (var tech in developer) {
+    //         if(tech[tech] == "") {
+    //             tech = "nkn";
+    //         }
+    //     }
+    // }
+
     generateAllDevelopersHTML(developers);
 
-    // Manually trigger a hashchange to start the app.
-    $(window).trigger('hashchange');
-});
+})
+
+    // $(window).trigger('hashchange');
 
 function generateAllDevelopersHTML(data){
 
@@ -25,6 +24,9 @@ function generateAllDevelopersHTML(data){
     //Compile the template​
     var theTemplate = Handlebars.compile (theTemplateScript);
     list.append (theTemplate(data));
+    
+    var userName = localStorage.getItem("userName");
+    document.getElementById('userName').innerHTML = userName;
 
 
     // Each products has a data-index attribute.

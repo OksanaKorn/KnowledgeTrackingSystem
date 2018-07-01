@@ -1,7 +1,7 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-  }
+  } */
   
   .login {
     max-width: 400px;
@@ -22,7 +22,7 @@
   form select,
   form button {
     border: 0;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     display: block;
     width: 100%;
   }
@@ -51,4 +51,5 @@
 
   form .toRegist {
       color: #FFFFFF;
+      text-decoration: underline;
   }

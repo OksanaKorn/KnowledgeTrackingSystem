@@ -19,91 +19,61 @@
     {
       "id": 3,
       "name": "Oksana",
-      "lastName": "kl",
+      "lastName": "Korn",
       "email": "kskorni21@gmail.com",
-      "password": "12345"
+      "password": "12345",
+      "role": "manager"
     },
     {
       "id": 4,
       "name": "Oksana",
-      "lastName": "kl",
-      "email": "kskorni21@gmail.com",
-      "password": "12345"
-    },
-    {
-      "id": 5,
-      "name": "Oksana",
-      "lastName": "km",
-      "email": "kskorni21@gmail.com",
-      "password": "333333333",
-      "role": "developer"
-    },
-    {
-      "id": 6,
-      "name": "Oksana",
-      "lastName": "km",
-      "email": "kskorni21@gmail.com",
-      "password": "333333333",
-      "role": "developer"
-    },
-    {
-      "id": 7,
-      "name": "Oksana",
-      "lastName": "Korn",
-      "email": "kskorni21@gmail.com",
-      "password": "12345",
-      "role": "developer"
-    },
-    {
-      "id": 8,
-      "name": "Oksa",
-      "lastName": "mjlk",
-      "email": "kskorni21@gmail.com",
-      "password": "7777777777",
-      "role": "developer"
-    },
-    {
-      "id": 9,
-      "name": "klmkn",
-      "lastName": "m",
-      "email": "kskorni21@gmail.com",
-      "password": "555555555",
-      "role": "developer"
-    },
-    {
-      "id": 10,
-      "name": "kkkll",
-      "lastName": "llll",
-      "email": "kskorni21@gmail.com",
-      "password": "33333333",
+      "lastName": "kkkk",
+      "email": "ljl@yhh",
+      "password": "jjuuuuu",
       "role": "developer"
     }
   ],
   "technologies": [
     {
       "id": 1,
+      "name": "Jack White",
       "javascript": "advanced",
       "css": "advanced",
       "html": "advanced",
-      "angular": "intermediate",
       "sql": "beginner",
       "csharp": "",
       "java": "",
       "python": "",
       "mongodb": "beginner",
+      "cplus": "",
       "english": "advanced"
     },
     {
       "id": 2,
+      "name": "Bob Dilan",
       "javascript": "beginner",
       "css": "beginner",
       "html": "beginner",
-      "angular": "",
       "sql": "beginner",
       "csharp": "advanced",
       "java": "",
       "python": "",
       "mongodb": "beginner",
+      "cplus": "",
+      "english": "advanced"
+    },
+    {
+      "id": 3,
+      "name": "Jack White",
+      "javascript": "advanced",
+      "css": "",
+      "html": "",
+      "sql": "beginner",
+      "csharp": "intermediate",
+      "java": "",
+      "python": "beginner",
+      "mongodb": "intermediate",
+      "cplus": "",
       "english": "advanced"
     }
   ]
