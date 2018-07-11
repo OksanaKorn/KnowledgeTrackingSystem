@@ -56,20 +56,28 @@ $(function() {
                     }
                 }
                 if (!flag) {
-        $.post("http://localhost:3000/users",
-        {
-          id: "",
-          name: $('#name').val(),
-          lastName: $('#lastName').val(),
-          email: $('#email').val(),
-          password: $('#password').val(),
-          role: $('#role').val()
-        }
-      );
-      var role = $('#role').val();
-      sentName();
-      selectView(role);
-        // console.log(registrationInfo);
-      } else alert("user with this email already exists");})
-    }});
+                  var name =  $('#name').val();
+                  var lastName = $('#lastName').val();
+                  userName = name + " " + lastName;
+                  if (typeof(Storage) !== "undefined") {
+                      localStorage.setItem("userName", userName);
+                  } else {
+                      console.log("Sorry, your browser does not support Web Storage...");
+                  }
+                  $.post("http://localhost:3000/users",
+                  {
+                    id: "",
+                    name: name,
+                    lastName: lastName,
+                    email: $('#email').val(),
+                    password: $('#password').val(),
+                    role: $('#role').val()
+                  }
+                );
+
+                var role = $('#role').val();
+                selectView(role);
+                  // console.log(registrationInfo);
+                } else alert("user with this email already exists");})
+              }});
      });
