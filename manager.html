@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
     <title>System Acounting of Knowledge</title>
@@ -13,7 +14,7 @@
 
 <body>
     <header>
-        <img src="assets/logo.jpg">
+        <img class="logo" src="assets/logo.jpg">
         <div class="statusBar">
             <span class="userName" id="userName"></span><br>
             <a href="login.html">Log out</a>
@@ -24,20 +25,22 @@
         <div class="developers-list">
             <script id="developers-template" type="x-handlebars-template">​
                 {{#each this}}
-                <ul class="developer">
-                    <li data-index="{{id}}" class="developer">
-                    <li><span>Name: </span>{{name}}</li>
-                    <li><span>JavaScript: </span>{{javascript}}</li>
-                    <li><span>CSS: </span>{{css}}</li>
-                    <li><span>HTML: </span>{{html}}</li>
-                    <li><span>Angular: </span>{{angular}}</li>
-                    <li><span>SQL: </span>{{sql}}</li>
-                    <li><span>MongoDB: </span>{{mongodb}}</li>
-                    <li><span>C#: </span>{{csharp}}</li>
-                    <li><span>Java: </span>{{java}}</li>
-                    <li><span>Python: </span>{{python}}</li>
-                    <li><span>English: </span>{{english}}</li>
-                    </li></ul>
+                <div class="developer">
+                    <ul>
+                        <li><h3><span>Developer: </span>{{name}}</h3></li>
+                        <li><span>JavaScript: </span>{{javascript}}</li>
+                        <li><span>CSS: </span>{{css}}</li>
+                        <li><span>HTML: </span>{{html}}</li>
+                        <li><span>Angular: </span>{{angular}}</li>
+                        <li><span>SQL: </span>{{sql}}</li>
+                        <li><span>MongoDB: </span>{{mongodb}}</li>
+                        <li><span>C#: </span>{{csharp}}</li>
+                        <li><span>Java: </span>{{java}}</li>
+                        <li><span>Python: </span>{{python}}</li>
+                        <li><span>English: </span>{{english}}</li>
+                        </li>
+                    </ul>
+                </div>
                 {{/each}}
             </script>
         </div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    <title>System Acounting of Knowledge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <link href="manager.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/logo.jpg">
+        <div class="statusBar">
+            <span class="userName" id="userName"></span><br>
+            <a href="login.html">Log out</a>
+        </div>
+    </header>
+    <div class="existedDeveloper page">
+
+        <div class="developers-list">
+            <script id="developers-template" type="x-handlebars-template">​
+                <ul class="developer">
+                    <li data-index="{{id}}" class="developer">
+                    <li><span>Name: </span>{{name}}</li>
+                    <li><span>JavaScript: </span>{{javascript}}</li>
+                    <li><span>CSS: </span>{{css}}</li>
+                    <li><span>HTML: </span>{{html}}</li>
+                    <li><span>Angular: </span>{{angular}}</li>
+                    <li><span>SQL: </span>{{sql}}</li>
+                    <li><span>MongoDB: </span>{{mongodb}}</li>
+                    <li><span>C#: </span>{{csharp}}</li>
+                    <li><span>Java: </span>{{java}}</li>
+                    <li><span>Python: </span>{{python}}</li>
+                    <li><span>English: </span>{{english}}</li>
+                    </li></ul>
+            </script>
+        </div>
+    </div>
+    <script src="assets/manager.js"></script>
+</body>
+</html>
+

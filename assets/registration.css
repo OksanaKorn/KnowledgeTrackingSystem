@@ -9,6 +9,10 @@
   margin: 25px auto;
 }
 
+form a {
+  color: #FFFFFF;
+}
+
 form {
   padding: 20px;
   background: #2C3E50;

@@ -23,14 +23,6 @@
       "email": "kskorni21@gmail.com",
       "password": "12345",
       "role": "manager"
-    },
-    {
-      "id": 4,
-      "name": "Oksana",
-      "lastName": "kkkk",
-      "email": "ljl@yhh",
-      "password": "jjuuuuu",
-      "role": "developer"
     }
   ],
   "technologies": [
@@ -59,20 +51,6 @@
       "java": "",
       "python": "",
       "mongodb": "beginner",
-      "cplus": "",
-      "english": "advanced"
-    },
-    {
-      "id": 3,
-      "name": "Jack White",
-      "javascript": "advanced",
-      "css": "",
-      "html": "",
-      "sql": "beginner",
-      "csharp": "intermediate",
-      "java": "",
-      "python": "beginner",
-      "mongodb": "intermediate",
       "cplus": "",
       "english": "advanced"
     }
