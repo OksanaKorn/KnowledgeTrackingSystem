@@ -1,6 +1,15 @@
 $.getJSON( "http://localhost:3000/technologies", function( data ) {
 
+    
+    for (var i = 0; i < data.length; i++) {
+        var developer = data[i];
+        for (var tech in developer) {
+            if (tech[tech] === undefined) {
+                tech = "nnn";
+            }
+    }
     var developers = data;
+    }
 
     // for (var developer in developers) {
     //     for (var tech in developer) {
@@ -9,7 +18,6 @@ $.getJSON( "http://localhost:3000/technologies", function( data ) {
     //         }
     //     }
     // }
-
     generateAllDevelopersHTML(developers);
 
 })
