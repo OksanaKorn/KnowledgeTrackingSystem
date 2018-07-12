@@ -30,9 +30,9 @@ var role;
 var userName;
 function selectView(role) {
     if (role == "developer") {
-        window.location.href = "developerPage.html";
+        window.location.href = "../developer/developerPage.html";
     } else if (role == "manager") {
-        window.location.href = "manager.html";
+        window.location.href = "../manager/manager.html";
     }
 }
 
