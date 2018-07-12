@@ -35,15 +35,15 @@ header {
     align-self: center;
     margin-right: 3%;
 }
-/* 
-#loginPage {
-    display: block;
-} */
 
-/* #developer {
-    display: none;
-} */
-
-/* .registration {
-    display: none;
-} */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .logo  {
+        width: 100%;
+    }
+    .statusBar {
+        width: 100%;
+    }
+}

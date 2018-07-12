@@ -24,11 +24,6 @@ $(function() {
         email: "Please enter a valid email address",
         role: "Please choose a Role"
       },
-      // Make sure the form is submitted to the destination defined
-      // in the "action" attribute of the form when valid
-    //   submitHandler: function(form) {
-    //     form.submit();
-    //   }
     });
   });
 
@@ -77,7 +72,6 @@ $(function() {
 
                 var role = $('#role').val();
                 selectView(role);
-                  // console.log(registrationInfo);
                 } else alert("user with this email already exists");})
               }});
      });

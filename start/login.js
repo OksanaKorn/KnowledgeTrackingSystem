@@ -18,11 +18,6 @@ $(function() {
         },
         email: "Please enter a valid email address",
       },
-      // Make sure the form is submitted to the destination defined
-      // in the "action" attribute of the form when valid
-    //   submitHandler: function(form) {
-    //     form.submit();
-    //   }
     });
   });
 
@@ -64,27 +59,3 @@ $(document).ready(function(){
         };
     })
 });
-
-//   function login(event) {
-
-//     event.preventDefault();
-  
-//     var json = {
-//       email : $('#email').val(),
-//       password : $('#password').val()
-//     };
-  
-//     var URL = "http://localhost:3000/users";
-//     $.ajax({
-//       url : URL,
-//       type: "POST",	
-//       data: JSON.stringify(json)
-//     }).success(function(res) {
-//       $('#log_form').css({ 'display' : 'none' });
-//       $('#logged_user').css({ 'display' : 'block' });
-//       hide_error();
-//     }).error(function(res) {
-//       $('#error_text').text("User/password is incorrect");
-//       $('#error').css({ 'display' : '' });
-//     });
-//   }
